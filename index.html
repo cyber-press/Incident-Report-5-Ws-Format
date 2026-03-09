@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Incident Report</title>
+  <title>Security Incident Report</title>
   <meta name="theme-color" content="#0B1220" />
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="icon" href="icon-192.png" />
@@ -15,7 +15,7 @@
 <body>
   <header class="topbar" role="banner">
     <div class="brand">
-      <div class="badge" aria-hidden="true">IC</div>
+      <div class="badge" aria-hidden="true">SEC</div>
       <div class="brandText">
         <div class="brandTitle">SECURITY</div>
         <div class="brandSub">Incident Report • 5 W’s Format</div>
@@ -82,7 +82,7 @@
       </div>
       <label class="field">
         <span>Persons Involved</span>
-        <textarea id="who_persons_involved" rows="4" placeholder="Example: Alice Smith (patient), Officer DiCaprio (responding officer)"></textarea>
+        <textarea id="who_persons_involved" rows="4" placeholder="Example: Alice Smith (patient), Officer Jane Doe (responding officer)"></textarea>
       </label>
     </section>
 
@@ -162,11 +162,7 @@
           <span>Date</span>
           <div class="fieldRow"><input id="officer_sig_date" inputmode="numeric" placeholder="MM/DD/YYYY" / type="date"><button class="mini-btn" type="button" data-today="officer_sig_date" aria-label="Set today\'s date">Today</button></div>
         </label>
-        <label class="field">
-          <span>Supervisor Signature</span>
-          <input id="supervisor_signature" autocomplete="off" />
-        </label>
-      </div>
+</div>
     </section>
 
     <footer class="foot">
