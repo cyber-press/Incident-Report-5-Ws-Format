@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Incident Report</title>
+  <title>Inter-Con Incident Report</title>
   <meta name="theme-color" content="#0B1220" />
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="icon" href="icon-192.png" />
@@ -17,8 +17,8 @@
     <div class="brand">
       <div class="badge" aria-hidden="true">IC</div>
       <div class="brandText">
-        <div class="brandTitle">SECURITY</div>
-        <div class="brandSub">Incident Report • 5 W’s</div>
+        <div class="brandTitle">INTER-CON SECURITY</div>
+        <div class="brandSub">Incident Report • 5 W’s Format</div>
       </div>
     </div>
 
@@ -201,5 +201,40 @@
     </div>
   </div>
 
+
+  <!-- Email Bottom Sheet -->
+  <div id="emailSheetOverlay" class="sheetOverlay" hidden aria-hidden="true"></div>
+  <section id="emailSheet" class="sheet" role="dialog" aria-modal="true" aria-labelledby="emailSheetTitle" hidden>
+    <div class="sheetHandle" aria-hidden="true"></div>
+    <div class="sheetHeader">
+      <div>
+        <div id="emailSheetTitle" class="sheetTitle">Email report</div>
+        <div class="sheetSub">Send to any address. Subject and report text will be prefilled.</div>
+      </div>
+      <button id="btnEmailSheetClose" class="iconBtn" type="button" aria-label="Close email sheet">✕</button>
+    </div>
+
+    <div class="sheetBody">
+      <label class="sheetLabel" for="emailToInput">Recipient email</label>
+      <input id="emailToInput" class="sheetInput" type="email" inputmode="email" autocomplete="email" placeholder="name@example.com" />
+
+      <div class="chipRow" aria-label="Quick suggestions">
+        <button type="button" class="chip" data-email-suggest="last">Last used</button>
+        <button type="button" class="chip" data-email-suggest="default">My email</button>
+      </div>
+
+      <label class="toggleRow">
+        <input id="rememberEmailToggle" type="checkbox" />
+        <span>Remember this email</span>
+      </label>
+
+      <div class="sheetActions">
+        <button id="btnEmailSheetCancel" class="btn btn-secondary" type="button">Cancel</button>
+        <button id="btnEmailSheetSend" class="btn" type="button">Open Email</button>
+      </div>
+
+      <p class="sheetHint">Tip: For attachments, export PDF first then attach from your email app.</p>
+    </div>
+  </section>
 </body>
 </html>
